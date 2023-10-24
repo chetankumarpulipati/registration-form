@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(81, 131, 131);
+  }
+  
+  form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  h1{
+    color: rgb(82, 18, 18);
+  }
+.small{
+  text-align: center;
+}
