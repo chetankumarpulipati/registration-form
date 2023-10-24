@@ -1,18 +1,35 @@
 <?php
 
+$servername = 'localhost';
+$username = 'root';
+$password = '';
+$dbname = 'membership_registration';
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die('Connection Failed: ' . $conn->connect_error);
+}
+
 $name = $_POST['name'];
 $email = $_POST['email'];
-$password = $_POST['password'];
-$date_of_birth = $_POST['date_of_birth'];
-$gender = $_POST['gender'];
+$mobile = $_POST['mobile_no'];
+$dob = $_POST['date_of_birth'];
 
-//create connection
-$con = mysqli_connect("localhost","root","","form");
-$q = "insert into registration value('$name','$email','$password','$date_of_birth','$gender')";
+$stmt = $conn->prepare("INSERT INTO details(name,email) VALUES (?,?)");
 
-//check connection
-if(!$conn){
-  die("Connection failed: ".mysqli_connect_error());
+if (!$stmt) {
+    die('Prepare Failed: ' . $conn->error);
 }
-echo "Connected Successfully";
+
+$stmt->bind_param("s", $name);
+
+if ($stmt->execute()) {
+    echo "Registration Successful";
+} else {
+    echo "Error: " . $stmt->error;
+}
+
+$stmt->close();
+$conn->close();
 ?>
