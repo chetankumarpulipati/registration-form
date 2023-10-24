@@ -1,9 +1,10 @@
 # Registration-form
 <html>
 <head>
-  <div>This is a Registration Form to get Membership in the club</div>
+  <div>This is a Registration Form to get Membership in the Sports club</div>
 </head>
 <body>
+ div> Tech Stack: HTML,CSS,PHP,MYSQL</div>
 <h3>How to Run?</h3>
 <p>
 <div>Step-1: Install Xampp on your pc and run it as an administrator.</div>
