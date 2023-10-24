@@ -1,7 +1,7 @@
 # registration-form
 <html>
 <head>
-  <div>----------------------------------------------This is a Registration Form to get Membership in the club------------------------------------------------</div>
+  <div>This is a Registration Form to get Membership in the club</div>
 </head>
 <body>
 <h3>How to Run?</h3>
