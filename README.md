@@ -1,11 +1,11 @@
 # registration-form
 <html>
 <head>
-  -------------------------------------------------------------------This is a Registration Form to get Membership in the club-------------------------------------------------------
+  ---------------------------------------------------------This is a Registration Form to get Membership in the club-------------------------------------------------------
 </head>
 <body>
-  How to Run?
-Step-1: Install Xampp on your pc and run it as an administrator.
+<h3>How to Run?</h3>
+<div>Step-1: Install Xampp on your pc and run it as an administrator.</div>
 Step-2: Start Apache Server.
 Step-3: Start MySql Server.
 _________________________________________________________________Make sure both the modules are running successfully._____________________________________________
