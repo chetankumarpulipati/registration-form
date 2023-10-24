@@ -1,4 +1,4 @@
-# registration-form
+# Registration-form
 <html>
 <head>
   <div>This is a Registration Form to get Membership in the club</div>
