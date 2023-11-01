@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="Sports-Stadiums-in-India.jpg" alt="" id="bgimage">
+    <img src="Sports-Stadiums-in-India.jpg" alt="" id="bgimage">
+
+    <div class="container">
+        <header>
+            <img src="IG.jpeg" alt="Logo">
+            <h1><strong>Membership Application</strong></h1>
+        </header>
+        <br>
+        <br>
+        <form action="process.php" name="part1" onsubmit="" method="post">
+        <section class ="personal-information">
+            <div class="form-group">
+                <label for="membership-name">Full Name</label>
+                <input  id="membership-name" type="text" name="membership-name" placeholder=" Enter Name" required>
+                <b><span class="form-control"></span></b>
+            </div>
+
+            <div class="form-group">
+                <label for="date-of-birth">Date of Birth</label>
+                <input type="date" id="cr" name="cr" required>
+                <b><span class="form-control"></span></b>
+            </div>
+
+            <div class="form-group">
+                <label for="phno">Contact Number</label>
+                <input type="tel" id="phno" name="phno" placeholder="Phone" required>
+                <b><span class="form-control"></span></b>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <input type="radio" id="gender" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="gender" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+            <div class="form-group">
+                <label for="Applicant-email">Email</label>
+                <input type="email" id="email" name="email"placeholder='Enter Email id' required>
+                <b><span class="form-control"></span></b>
+            </div>
+        </section>
+        <section class="address-information">
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="cty">City</label>
+                <input  id="cty" type="text" name="cty" required>
+                <b><span class="form-control"></span></b>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+            <div class="form-group">
+                <label for="pin-code">Pin code</label>
+                <input type="text" id="pin-code" name="pin-code" required>
+            </div>
+
+            <div class="form-group">
+                <label for="emergency-contact-1">Emergency Contact </label>
+                <input type="text" id="emergency-contact-1" name="emergency-contact-1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="emergency-contact-1-relation">Emergency Contact  Relation</label>
+                <input type="text" id="emergency-contact-1-relation" name="emergency-contact-1-relation" required>
+            </div>
+
+        </section>
+            <!-- <div class="form-group">
+                <label for="profile-image">Upload Profile Image</label>
+                <input type="file" id="profile-image" name="profile-image" accept="">
+            </div> -->
+            <div class="form-groups">
+                <label for="sports">Sports</label>
+                <select id="sports" name="sports" required>
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="soccer">Soccer</option>
+                    <option value="tennis">Tennis</option>
+                    <option value="volleyball">Volleyball</option>
+                    <option value="hockey">Hockey</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="golf">Golf</option>
+                    <option value="cricket">Cricket</option>
+                    <option value="baseball">Baseball</option>
+                    <option value="badminton">Badminton</option>
+                    <option value="table-tennis">Table Tennis</option>
+                    <option value="rugby">Rugby</option>
+                    <option value="track-and-field">Track and Field</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="wrestling">Wrestling</option>
+                    <option value="boxing">Boxing</option>
+                    <option value="karate">Karate</option>
+                    <option value="judo">Judo</option>
+                    <option value="skiing">Skiing</option>
+                </select>
+                <br>
+                <br>
+                
+            </div>
+    </div>
+    <br>
+    <br>
+    <img src="Cricket-Stadium.jpg" alt="" id="bgimage">
+    <div class="container" style="margin-top: 30px;"id="redirect" >
+            <div class="form-group">
+                <label for="father-name">Father Name</label>
+                <input type="text" id="father-name" name="father-name">
+            </div>
+
+            <div class="form-group">
+                <label for="father-phone-number">Father Phone no</label>
+                <input type="tel" id="father-phone-number" name="father-phone-number">
+                <b> <span  class="form-control"></span></b>
+            </div>
+
+            <div class="form-group">
+                <label for="father-occupation">Father Occupation</label>
+                <input type="text" id="father-occupation" name="father-occupation">
+            </div>
+
+            <div class="form-group">
+                <label for="father-email">Father Email</label>
+                <input type="email" id="father-email" name="father-email" >
+                <b> <span  class="form-control"></span></b>
+            </div>
+
+            <div class="form-group">
+                <label for="mother-name">Mother Name</label>
+                <input type="text" id="mother-name" name="mother-name">
+            </div>
+
+            <div class="form-group">
+                <label for="mother-phone-number">Mother Phone no</label>
+                <input type="tel" id="mother-phone-number" name="mother-phone-number">
+                <b> <span  class="form-control"></span></b>
+            </div>
+            <section class="health-information">
+                <div class="form-group">
+                    <label for="allergies">Medical Conditions</label>
+                    <textarea type="text" id="allergies" name="allergies" placeholder="Food Allergies  Environmental Allergies Insect Sting Allergies Medication Allergies  Other Allergies "></textarea>
+                </div>
+            </section>
+        
+            <section class="newlabel" >
+                <div class="form-group" id="membertype">
+                    <label id="memlabel" >Type of Membership</label>
+                    <label >
+                    <input type="radio" id="typeofmem" name="member" value="individual">Individual
+                    </label>
+                    <label >
+                        <input type="radio" id="typeofmem" name="member" value="family">Family
+                    </label>
+                    <label >
+                        <input type="radio" id="typeofmem" name="member" value="student">Student
+                    </label>
+                    <label >
+                        <input type="radio" id="typeofmem" name="member" value="senior">Senior
+                    </label>  
+                </div>
+        
+                <div class="form-group" id="membertype">
+                    <label id="memlabel" >Duration of Membership</label>
+                    <label >
+                    <input type="radio" id="year" name="durat" value="1year">One Year
+                    </label>
+                    <label >
+                        <input type="radio" id="year" name="durat" value="3years">Three Years
+                    </label>
+                </div>
+            </section>
+            <section><b>Consent and Agreement</b>
+                <br></br>
+                <label class="checkbox-container">Liability Waiver and Assumption of Risk (for injury or accidents)
+                    <input type="checkbox" name="liability-waiver" required>
+                    <span class="checkmark"></span>
+                </label>
+            
+                <label class="checkbox-container">Code of Conduct or Club Rules Agreement
+                    <input type="checkbox" name="code-of-conduct-agreement" required>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Photo/Video Release consent (if any applicable)
+                    <input type="checkbox" name="photo-video-release-consent" required>
+                    <span class="checkmark"></span>
+                </label>
+            </section>
+            <br>
+                <!-- <div class="form-group">
+                    <label for="signature">Upload Signature</label>
+                    <input type="file" id="signature" name="signature" accept=".jpg, .jpeg, .png,image/*">
+                </div> -->
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+<!-- <script src="script.js"></script> -->
+</body>
+</html>
